@@ -1,10 +1,11 @@
 body {
 	display: block;
-	
+    margin: 8px;
 }
 
 * {
 	box-sizing: border-box;
+	font-family:sans-serif;
 }
 
 h1 {
@@ -13,56 +14,61 @@ h1 {
 	background-color: green;
 }
 
-article {
-	margin: 35px 3px 3px 3px;
-}
-
-.menu-item {
+div.menu {
+	width: 100%;
 	display: block;
-	position: relative;
-	margin: 10px;
-	padding: 5px;
-	border: 1px solid;
-	border-color: red;
-	background-color: grey;
-	width: 32%;
-	height: 200px;
-	float: right;
-	overflow-y: hidden;
 }
 
-.menu-header {
-	font-size: 125%;
+div.menu-item {
+	width: 33.33%;
+	float: left;
+}
+
+section {
+	margin: 10px;
+	background-color: grey;
+	overflow-y: hidden;
+	position: relative;
+	border: 1px solid black;
+}
+
+article {
+	margin: 40px 15px 15px 15px;
+}
+
+span {
 	position: absolute;
-	border-bottom: 1px solid;
-	border-left: 1px solid;
-	border-color: red;
 	right: 0px;
-	padding: 3px;
-	background-color: wheat;
-	width: auto;
-	font-weight: bold;
+	width: 30%;
+	text-align: right;
+	padding-right: 10px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 #kovbasa {
-	background-color: pink;
+	background-color: red;
 }
 
 #maslo {
-	background-color: white;
+	background-color: blue;
+}
+
+#jija {
+	background-color: yellow;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.item1 {
+	div.item1 {
 		width: 50%;
 	}
-	.item2 {
+	div.item2 {
 		width: 100%;
 	}
 }
 
 @media (max-width: 767px) {
-		.menu-item {
+		div.menu-item {
 		width: 100%;
 	}
 }
