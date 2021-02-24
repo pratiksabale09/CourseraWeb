@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+	background-color: green;
+}
+
+article {
+	margin: 35px 3px 3px 3px;
+}
+
+.menu-container
+{
+	width: 100%;
+}
+
+.menu-item {
+	position: relative;
+	margin: 1%;
+	border: 1px solid;
+	border-color: red;
+	background-color: grey;
+	width: 30%;
+	height: 200px;
+	float: left;
+	overflow-y: hidden;
+}
+
+.menu-header {
+	font-size: 125%;
+	position: absolute;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-color: red;
+	right: 0px;
+	padding: 3px;
+	background-color: wheat;
+	width: auto;
+	font-weight: bold;
+}
+
+#kovbasa {
+	background-color: pink;
+}
+
+#maslo {
+	background-color: white;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.menu-item {
+		width: 48%;
+	}
+	#jija{
+		width: 98%;
+	}
+}
+
+@media (max-width: 767px) {
+		.menu-item {
+		width: 100%;
+	}
+}
